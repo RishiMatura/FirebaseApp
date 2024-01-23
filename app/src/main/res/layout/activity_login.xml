@@ -58,7 +58,6 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textDirection="locale"
-        android:textIsSelectable="false"
         android:textSize="20sp"
         android:textStyle="normal|bold"
         app:autoSizeTextType="uniform"
