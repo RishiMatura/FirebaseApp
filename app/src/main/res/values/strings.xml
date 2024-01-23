@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FirebaseLogin</string>
+    <string name="login">Login</string>
+    <string name="Register">register</string>
+    <string name="password">password</string>
+    <string name="email">Email</string>
+    <string name="register_button">Register</string>
+    <string name="login_button">Login</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="logout">Logout</string>
+    <string name="main_description">First Register then Login the app !!</string>
+</resources>
