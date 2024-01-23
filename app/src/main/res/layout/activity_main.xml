@@ -43,7 +43,7 @@
         android:layout_width="199dp"
         android:layout_height="65dp"
         android:text="@string/logout"
-        android:textSize="24sp"
+        android:textSize="25sp"
         app:iconSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
