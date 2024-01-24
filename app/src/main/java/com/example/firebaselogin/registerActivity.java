@@ -3,8 +3,6 @@ package com.example.firebaselogin;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.credentials.ClearCredentialStateException;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
