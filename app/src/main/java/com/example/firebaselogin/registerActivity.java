@@ -2,6 +2,9 @@ package com.example.firebaselogin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.credentials.ClearCredentialStateException;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -42,6 +45,8 @@ public class registerActivity extends AppCompatActivity {
                 }
                 else {
                     registerUser(text_email, text_password);
+//                    startActivity(new Intent(registerActivity.this, loginActivity.class));
+
                 }
             }
         });
@@ -53,7 +58,10 @@ public class registerActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful())
+                {
                     Toast.makeText(registerActivity.this, "Registration Successful!!", Toast.LENGTH_SHORT).show();
+//                    auth.signOut();
+                }
                 else Toast.makeText(registerActivity.this, "Registration Failed !!", Toast.LENGTH_SHORT).show();
             }
         });
