@@ -22,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
+        app:layout_constraintVertical_bias="0.552"
+        tools:ignore="TextSizeCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -62,7 +63,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.35"
+        tools:ignore="TouchTargetSizeCheck"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/main_addDetails"
@@ -83,6 +86,7 @@
         android:layout_marginStart="16dp"
         android:ems="10"
         android:hint="@string/enterMarksTxt"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textColorHint="#831515"
         app:layout_constraintBottom_toTopOf="@+id/main_addDetails"
@@ -90,5 +94,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_name_field"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
