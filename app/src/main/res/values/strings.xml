@@ -10,4 +10,8 @@
     <string name="logout">Logout</string>
     <string name="main_description">First Register then Login the app !!</string>
     <string name="login_message">Thank you for registering, please do Login</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="add_name">Add Name</string>
+    <string name="enterMarksTxt">Enter your marks out of 100</string>
+    <string name="add_Details">Add Details</string>
 </resources>
