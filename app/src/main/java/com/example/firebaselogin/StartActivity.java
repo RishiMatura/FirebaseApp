@@ -1,5 +1,6 @@
 package com.example.firebaselogin;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -31,6 +32,13 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(StartActivity.this, registerActivity.class));
                 finish();
+            }
+        });
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                // Back is pressed... Finishing the activity
+                finishAffinity();
             }
         });
     }

@@ -1,8 +1,10 @@
 package com.example.firebaselogin;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -58,9 +60,15 @@ public class registerActivity extends AppCompatActivity {
                 if (task.isSuccessful())
                 {
                     Toast.makeText(registerActivity.this, "Registration Successful!!", Toast.LENGTH_SHORT).show();
-//                    auth.signOut();
                 }
                 else Toast.makeText(registerActivity.this, "Registration Failed !!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            public void handleOnBackPressed() {
+                // Back is pressed... Finishing the activity
+                startActivity(new Intent(registerActivity.this, StartActivity.class));
+//                finishAffinity();
             }
         });
     }

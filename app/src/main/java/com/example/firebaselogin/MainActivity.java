@@ -29,17 +29,14 @@ public class MainActivity extends AppCompatActivity {
         user_name = findViewById(R.id.main_name_field);
         user_marks = findViewById(R.id.main_Marks_field);
 
-
         logout_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 auth.signOut();
-                Toast.makeText(MainActivity.this, "Logout Successful !!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Logout Successful !!!", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, StartActivity.class));
             }
         });
-
-//        db.getReference().child("parent class").setValue("hello");
        add_button.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -50,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                }
                else {
                    db.getReference().child("Users").push().child(userName_text).child("Marks").setValue(userMarks_text);
+                   Toast.makeText(MainActivity.this, "Push Successful !!!", Toast.LENGTH_SHORT).show();
                }
            }
        });

@@ -1,7 +1,9 @@
 package com.example.firebaselogin;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +27,13 @@ public class loginActivity extends AppCompatActivity {
         password = findViewById(R.id.login_editTextTextPassword);
         login_button = findViewById(R.id.login_loginButton);
         auth = FirebaseAuth.getInstance();
-
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                // Back is pressed... Finishing the activity
+                startActivity(new Intent(loginActivity.this, StartActivity.class));
+            }
+        });
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,10 +48,11 @@ public class loginActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(AuthResult authResult) {
                         Toast.makeText(loginActivity.this, "Login Successful !!!", Toast.LENGTH_SHORT).show();
-//                        startActivity(new Intent(loginActivity.this, MainActivity.class));
+                        startActivity(new Intent(loginActivity.this, MainActivity.class));
                     }
                 });
             }
         });
+
     }
 }
