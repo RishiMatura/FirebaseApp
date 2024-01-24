@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FirebaseLogin</string>
+    <string name="app_name">Firebase App</string>
     <string name="login">Login</string>
     <string name="Register">register</string>
     <string name="password">password</string>
