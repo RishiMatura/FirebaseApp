@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/main_background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -15,14 +16,15 @@
         android:elegantTextHeight="true"
         android:freezesText="true"
         android:text="@string/login_successful"
-        android:textColorHighlight="#9F1B1B"
+        android:textColor="#2C292C"
+        android:textColorHighlight="#F8F8F8"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552"
+        app:layout_constraintVertical_bias="0.555"
         tools:ignore="TextSizeCheck" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -57,15 +59,16 @@
         android:layout_height="43dp"
         android:ems="10"
         android:hint="@string/enter_your_name"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:textColorHint="#982424"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
-        tools:ignore="TouchTargetSizeCheck"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.346"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/main_addDetails"
@@ -88,7 +91,7 @@
         android:hint="@string/enterMarksTxt"
         android:importantForAutofill="no"
         android:inputType="number"
-        android:textColorHint="#831515"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/main_addDetails"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
