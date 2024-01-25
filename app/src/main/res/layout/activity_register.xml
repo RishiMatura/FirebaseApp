@@ -15,7 +15,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="184dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/email"
@@ -65,9 +65,10 @@
         android:contentDescription="@string/profile_image_register_activity"
         app:layout_constraintBottom_toTopOf="@+id/emailField"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707"
+        app:layout_constraintVertical_bias="0.741"
         app:srcCompat="@drawable/register_profile_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
