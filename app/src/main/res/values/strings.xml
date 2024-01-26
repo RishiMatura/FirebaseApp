@@ -15,5 +15,5 @@
     <string name="enterMarksTxt">Enter your marks out of 100</string>
     <string name="add_Details">Add Details</string>
     <string name="profile_image_register_activity">profile image of register activity</string>
-    <string name="loginAp">Login App</string>
+    <string name="loginApp">Login App</string>
 </resources>
