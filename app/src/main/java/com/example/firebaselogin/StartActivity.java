@@ -34,7 +34,7 @@ public class StartActivity extends AppCompatActivity {
                 finish();
             }
         });
-        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {  //Important code for back button
             @Override
             public void handleOnBackPressed() {
                 // Back is pressed... Finishing the activity
